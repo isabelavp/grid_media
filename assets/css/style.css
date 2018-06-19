@@ -1,0 +1,55 @@
+/*el estilo*/
+.body{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+.titulo{
+	text-align: center;
+	color: brown;
+	padding: 5%;
+	font-family: 'Ubuntu', sans-serif;
+}
+.img {
+	width: 100%;
+}
+
+.primera_seccion{
+	text-align: justify;
+	padding: 5%;
+	font-size: 20px;
+}
+
+/*uso de medias query condicional*/
+@media (min-width: 200px) and (max-width: 425) {
+	[class*="col-"]{
+		width: 100%;
+		text-align: center;
+
+	}
+	
+	.gatito-bebe{
+		content: url(../img/gato2.jpg.jpg);
+	}
+	.titulo{
+		font-family: 'Ubuntu', sans-serif;
+		color: blue;
+	}
+	body{
+		background-color: red;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 768px){
+	[class*="col-"]{
+
+	}
+	.titulo{
+		font-family: 'Ubuntu', sans-serif;
+		color: blue;
+	}
+	.gatito-bebe{
+		content: url(./img/gatito.jpg);
+	}
+
+}
